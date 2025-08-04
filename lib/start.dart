@@ -14,6 +14,7 @@ class StartWidget extends StatelessWidget {
         ),
         backgroundColor: Colors.black,
         actions: [Icon(Icons.menu_sharp, color: Colors.white)],
+
         centerTitle: true,
       ),
 
@@ -37,30 +38,27 @@ class StartWidget extends StatelessWidget {
                 fontFamily: 'Montserrat-BoldItalic',
               ),
             ),
-            const SizedBox(height: 10),
-
-            SizedBox(height: 10),
-            Text(
-              "AI Engineer & Robotics Enthusiast",
+            SizedBox(height: 3),
+            const Text(
+              "AI & Robotics Enthusiast",
               style: TextStyle(
-                fontSize: 10,
+                fontSize: 12,
+                fontFamily: 'Monserrat',
                 color: Colors.blueGrey,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Montserrat-Regular',
               ),
             ),
-
+            SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  //Container email
+                  //Email
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: const Color(0xFF1E1E1E),
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(50),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black,
@@ -72,14 +70,20 @@ class StartWidget extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 5),
-                        Icon(Icons.mail, color: Colors.redAccent),
+                        SizedBox(height: 10),
+                        Icon(
+                          Icons.mail,
+                          color: const Color.fromARGB(255, 214, 62, 62),
+                        ),
+                        SizedBox(width: 20),
                         Text(
                           "ilhamsepriyadi8@gmail.com",
                           style: TextStyle(
-                            fontSize: 14,
+                            letterSpacing: 1.0,
+                            fontSize: 15,
+                            fontFamily: 'Monserrat-Regular',
                             color: Colors.white70,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.normal,
                           ),
                         ),
                       ],
@@ -87,13 +91,13 @@ class StartWidget extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
 
-                  // Container Phone
+                  // Phone
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: const Color(0xFF1E1E1E),
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(50),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black,
@@ -106,10 +110,20 @@ class StartWidget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 5),
-                        Icon(Icons.phone, color: Colors.green),
+                        Icon(
+                          Icons.phone,
+                          color: const Color.fromARGB(255, 41, 219, 133),
+                        ),
+                        SizedBox(width: 20),
                         Text(
                           "+62 857-1896-5973",
-                          style: TextStyle(fontSize: 14, color: Colors.white70),
+                          style: TextStyle(
+                            fontSize: 15,
+                            letterSpacing: 1.0,
+                            color: Colors.white70,
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'Monserrat-Regular',
+                          ),
                         ),
                       ],
                     ),
