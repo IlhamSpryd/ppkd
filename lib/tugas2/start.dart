@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-class StartWidget extends StatelessWidget {
-  const StartWidget({super.key});
+class Tugas3 extends StatelessWidget {
+  const Tugas3 ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +31,7 @@ class StartWidget extends StatelessWidget {
             const Text(
               "ILHAM SEPRIYADI",
               style: TextStyle(
+                letterSpacing: 1.0,
                 fontSize: 20,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -70,12 +70,12 @@ class StartWidget extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 10),
+                        SizedBox(height: 10, width: 20),
                         Icon(
                           Icons.mail,
                           color: const Color.fromARGB(255, 214, 62, 62),
                         ),
-                        SizedBox(width: 20),
+                        SizedBox(width: 25),
                         Text(
                           "ilhamsepriyadi8@gmail.com",
                           style: TextStyle(
@@ -89,8 +89,7 @@ class StartWidget extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
-
+                  const SizedBox(height: 15, width: 20),
                   // Phone
                   Container(
                     width: double.infinity,
@@ -109,7 +108,7 @@ class StartWidget extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 5),
+                        SizedBox(height: 5, width: 20),
                         Icon(
                           Icons.phone,
                           color: const Color.fromARGB(255, 41, 219, 133),
@@ -122,6 +121,39 @@ class StartWidget extends StatelessWidget {
                             letterSpacing: 1.0,
                             color: Colors.white70,
                             fontWeight: FontWeight.normal,
+                            fontFamily: 'Monserrat-Regular',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 15, width: 20),
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1E1E1E),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 10,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 350, width: 20),
+                        SizedBox(width: 10),
+                        Text(
+                          "About Me...",
+                          style: TextStyle(
+                            fontSize: 20,
+                            letterSpacing: 1.0,
+                            color: Colors.white70,
+                            fontWeight: FontWeight.bold,
                             fontFamily: 'Monserrat-Regular',
                           ),
                         ),
